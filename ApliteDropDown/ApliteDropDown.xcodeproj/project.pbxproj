@@ -8,11 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		179A84FE28F3F66C00A5AF9A /* ApliteDropDown.h in Headers */ = {isa = PBXBuildFile; fileRef = 179A84FD28F3F66C00A5AF9A /* ApliteDropDown.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		179A850828F3F85000A5AF9A /* DropDownView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179A850728F3F85000A5AF9A /* DropDownView.swift */; };
+		179A850B28F3F87300A5AF9A /* DropTableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 179A850928F3F87300A5AF9A /* DropTableCell.swift */; };
+		179A850C28F3F87300A5AF9A /* DropTableCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 179A850A28F3F87300A5AF9A /* DropTableCell.xib */; };
+		179A850E28F3FA4E00A5AF9A /* DropDownView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 179A850D28F3FA4E00A5AF9A /* DropDownView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		179A84FA28F3F66C00A5AF9A /* ApliteDropDown.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = ApliteDropDown.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		179A84FD28F3F66C00A5AF9A /* ApliteDropDown.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ApliteDropDown.h; sourceTree = "<group>"; };
+		179A850728F3F85000A5AF9A /* DropDownView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropDownView.swift; sourceTree = "<group>"; };
+		179A850928F3F87300A5AF9A /* DropTableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DropTableCell.swift; sourceTree = "<group>"; };
+		179A850A28F3F87300A5AF9A /* DropTableCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DropTableCell.xib; sourceTree = "<group>"; };
+		179A850D28F3FA4E00A5AF9A /* DropDownView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DropDownView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +37,7 @@
 		179A84F028F3F66C00A5AF9A = {
 			isa = PBXGroup;
 			children = (
+				179A850428F3F81300A5AF9A /* Dropdown */,
 				179A84FC28F3F66C00A5AF9A /* ApliteDropDown */,
 				179A84FB28F3F66C00A5AF9A /* Products */,
 			);
@@ -48,6 +57,17 @@
 				179A84FD28F3F66C00A5AF9A /* ApliteDropDown.h */,
 			);
 			path = ApliteDropDown;
+			sourceTree = "<group>";
+		};
+		179A850428F3F81300A5AF9A /* Dropdown */ = {
+			isa = PBXGroup;
+			children = (
+				179A850728F3F85000A5AF9A /* DropDownView.swift */,
+				179A850928F3F87300A5AF9A /* DropTableCell.swift */,
+				179A850A28F3F87300A5AF9A /* DropTableCell.xib */,
+				179A850D28F3FA4E00A5AF9A /* DropDownView.xib */,
+			);
+			path = Dropdown;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -93,6 +113,7 @@
 				TargetAttributes = {
 					179A84F928F3F66C00A5AF9A = {
 						CreatedOnToolsVersion = 14.1;
+						LastSwiftMigration = 1410;
 					};
 				};
 			};
@@ -119,6 +140,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				179A850C28F3F87300A5AF9A /* DropTableCell.xib in Resources */,
+				179A850E28F3FA4E00A5AF9A /* DropDownView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -129,6 +152,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				179A850828F3F85000A5AF9A /* DropDownView.swift in Sources */,
+				179A850B28F3F87300A5AF9A /* DropTableCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -258,6 +283,7 @@
 		179A850228F3F66C00A5AF9A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
@@ -278,6 +304,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
 				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -286,6 +313,7 @@
 		179A850328F3F66C00A5AF9A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEFINES_MODULE = YES;
